@@ -1,0 +1,367 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        :root {
+            color-scheme: light dark;
+        }
+
+        body {
+            background-color: #eee;
+            color: #111;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #111;
+                color: #eee;
+            }
+        }
+
+        body,
+        h3,
+        span,
+        a,
+        h2,
+        p {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        span {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        tr {
+            text-align: center;
+        }
+    </style>
+    <title>Withdrawal Confirmation</title>
+</head>
+
+
+
+<body style="margin: 0; padding: 0; background-color: #f6f7fa">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+        style="max-width: 700px; margin: 30px auto auto auto;">
+
+        <tr>
+            <td
+                style="text-align: center; margin-bottom:32px; background-image: url(https://lctassets.s3.amazonaws.com/Rectangle+354.png) ;background-repeat: no-repeat; border-bottom:2px solid #04E2AF; background-size: cover;">
+                <img style="padding: 20px;width: 180px; " src="https://lctassets.s3.amazonaws.com/Group+1000002718.png"
+                    alt="" />
+            </td>
+        </tr>
+    </table>
+    <!-- Start of Content Section -->
+    <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%"
+        style="max-width: 700px; margin: 0 auto; padding: 0 40px;">
+
+        <tr>
+            <td style="text-align: center; padding-top: 25px; padding-bottom: 20px;">
+                <img width="100px" height="100px" src="https://lctassets.s3.amazonaws.com/warning.gif" alt="" />
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center; background-color: #1A1C55;background: #1A1C55; height: 40px;">
+
+                <span style="
+                color: #FFFFFF;
+                font-family: Poppins;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                 line-height: 150%;
+                padding-top: 8px;
+                padding-bottom: 24px;
+              ">Confirm Your Withdrawal</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center;">
+                <span style="
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                display: inline-block;
+                color: #868686;
+                padding-top: 16px;
+               ">You’ve initiated a request to withdraw</span>
+                <div style="color: #04E2AF;
+                    text-align: center;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    padding: 5px 0;
+                    font-weight: 600;
+                    line-height: normal;">
+                    {{amount}} {{token}}
+
+                </div>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                <span style="
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                display: inline-block;
+                color: #868686;
+                padding-bottom: 16px;
+               ">to the following address:</span>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center; background-color: #1A1C55;background: #1A1C55; height: 40px;">
+
+                <span style="
+                color: #FFFFFF;
+                font-family: Poppins;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                 line-height: 150%;
+                padding-top: 8px;
+                padding-bottom: 24px;
+              ">Address</span>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td style="text-align: center; padding-bottom: 6px; padding-top: 16px;">
+                <!-- Add redirection link in href -->
+
+                <span style="color: #868686;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;">
+                    {{address}}
+                </span>
+                <br /> <br />
+                <span style="color: #868686;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;">
+                    <span style="font-weight: 600;">Device:</span> {{deviceName}}
+                    <br />
+                    <span style="font-weight: 600;">IP Location:</span>{{ipLocation}}
+                    <br />
+                    <span style="font-weight: 600;">IP:</span>{{ipAddress}}
+                </span>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center; background-color: #1A1C55;background: #1A1C55; height: 40px;">
+
+                <span style="
+                color: #FFFFFF;
+                font-family: Poppins;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                 line-height: 150%;
+                padding-top: 8px;
+                padding-bottom: 24px;
+              ">Verification code</span>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center; padding-bottom: 6px; padding-top: 16px;">
+                <!-- Add redirection link in href -->
+                <span style="color: #04E2AF;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;">
+                    {{code}}
+                </span> <br />
+
+                <span style="color: #868686;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;">
+                    The verification code will expire after 30 minutes. Do not share your code with anyone.
+                </span>
+
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center; padding-bottom: 6px; padding-top: 16px;">
+                <div style="border:1px solid #FDD4D4; padding: 10px 5px;">
+                    <span style="color:#FF1B1B;
+                    text-align: center;
+                    font-family: Poppins;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;">
+                        Warning
+                    </span>
+                    <br />
+                    <span style="color: #D43F3F;
+                    text-align: center;
+                    font-family: Poppins;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;">
+                        Please carefully review all the data; this action is irreversible. Local Traders will not be
+                        responsible for any action.
+
+                    </span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="margin-bottom: 40px;text-align: center;">
+                <hr style="border: 1px solid #DBDBDB; padding: 0 32px;margin-bottom: 20px" />
+
+                <span style="
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                font-family: Poppins;
+                line-height: 24px;
+                display: inline-block;
+                color: #868686;
+                padding-top: 16px;
+                padding-bottom: 24px;
+              ">
+                    Don’t recognize this activity? Please
+                    <a style="color: #176EF0;
+                    font-weight: 600;
+                    text-decoration-line: underline;" target="_blank"
+                        href="https://localtraders.finance/change-password"> Change your password </a>
+
+                    and contact
+                    <a style="color: #176EF0;
+                     font-family: Poppins;
+                     font-weight: 600;
+                     text-decoration-line: underline;" target="_blank" href="https://www.localtraders.finance/faqs">
+                        customer support
+                    </a>s
+                    immediately.
+                </span>
+
+                <span style="
+                color: #868686;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: italic;
+                font-weight: 400;
+                line-height: normal;
+                display: inline-block;
+                margin-bottom: 20px;
+ 
+              ">
+                    This is an automated message, please do not reply.
+                </span>
+
+                <hr style="border: 1px solid #DBDBDB; padding: 0 32px;" />
+
+            </td>
+        </tr>
+    </table>
+
+    <!-- End of Content Section -->
+
+
+    <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%"
+        style="max-width: 700px; margin: 0 auto ; padding: 0 40px 40px 40px;">
+        <tr style="text-align: left;">
+            <td>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h2 style="
+                        font-style: normal;
+                        font-weight: 400;
+                       font-size: 12px;
+                       margin-bottom: 3px;
+                       margin-top:0;
+                       text-align: left;
+                       line-height: 21px;
+                       color: #A8A8A8;
+                     ">
+                            Follow us for more financial peace of mind <br />
+
+
+                        </h2>
+                        <span style="display: inline-flex;justify-content: flex-start; align-items: center;">
+                            <a href="https://www.linkedin.com/company/86695219" style="margin-right: 5px;"
+                                target="_blank" rel="noopener noreferrer">
+                                <img src="https://lctassets.s3.amazonaws.com/linkedin.png" width="16px" height="16px" />
+                            </a>
+                            <a href="https://twitter.com/LOCALTRADERSCL/" style="margin-right: 5px;" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="https://lctassets.s3.amazonaws.com/twitter.png" width="16px" height="16px" />
+                            </a>
+                            <a href="https://instagram.com/localtraderscl?igshid=MzRlODBiNWFlZA=="
+                                style="margin-right: 5px;" target="_blank" rel="noopener noreferrer">
+                                <img src="https://lctassets.s3.amazonaws.com/insta.png" width="16px" height="16px" />
+                            </a>
+                            <a href="https://www.youtube.com/@localtraderscl" style="margin-right: 5px;" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="https://lctassets.s3.amazonaws.com/youtube.png" width="16px" height="16px" />
+                            </a>
+                            <a href="https://t.me/Localtradersofficial" target="_blank" style="margin-right: 5px;"
+                                rel="noopener noreferrer">
+                                <img src="https://lctassets.s3.amazonaws.com/email.png" width="16px" height="16px" />
+                            </a>
+                        </span>
+                    </div>
+                    <div style="margin-left: auto;">
+                        <span style="
+                                      font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                font-family: Poppins;
+                line-height: 20px;
+                display: inline-block;
+                color: #A8A8A8;
+                        ">
+                            Local Traders SpA, VAT: <span style="color: #04E2AF; font-weight: 600;"> 77603426-6.</span>
+                            <br />
+                            Registered in Chile, South America
+                        </span>
+                    </div>
+
+                </div>
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
